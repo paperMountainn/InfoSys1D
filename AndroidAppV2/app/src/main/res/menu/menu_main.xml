@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.androidappv2.MainActivity">
+
+    <item
+        android:id="@+id/storyPage"
+        android:orderInCategory="100"
+        android:title="@string/storyPage"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/edimension"
+        android:orderInCategory="100"
+        android:title="@string/edimension"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/timetable"
+        android:orderInCategory="100"
+        android:title="@string/timetable"
+        app:showAsAction="never" />
+</menu>
