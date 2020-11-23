@@ -28,7 +28,7 @@ public class StoryOverview extends AppCompatActivity {
         // Button buttonrefresh;
         // Button buttonupdate;
 
-        Comstruc=findViewById(R.id.comstruc);
+        Comstruc = findViewById(R.id.comstruc);
         Comstruc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

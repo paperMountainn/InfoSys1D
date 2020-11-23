@@ -191,8 +191,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.storyPage) {
-
-
+            Intent toStoryOverview = new Intent(MainActivity.this, StoryOverview.class);
+            startActivity(toStoryOverview);
             return true;
         }
 
