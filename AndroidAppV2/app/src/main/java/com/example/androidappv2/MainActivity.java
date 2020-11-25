@@ -191,13 +191,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.storyPage) {
-
-
-            return true;
-        }
-
-        if (id == R.id.edimension){
-
+            Intent toStoryOverview = new Intent(MainActivity.this, StoryOverview.class);
+            startActivity(toStoryOverview);
             return true;
         }
 
@@ -206,6 +201,20 @@ public class MainActivity extends AppCompatActivity {
             return true;
 
         }
+
+        if (id == R.id.edimension){
+            Uri webpage = Uri.parse("https://edimension.sutd.edu.sg");
+            Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+            webIntent.setData(webpage);
+
+            if (webIntent.resolveActivity(getPackageManager()) != null){
+                startActivity(webIntent);
+                return true;
+        }
+
+
         return super.onOptionsItemSelected(item);
+    }
+        return false;
     }
 }
