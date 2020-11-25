@@ -29,7 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+<!--        StoryOverview and ShowStory Activities added-->
         <activity android:name=".StoryOverview" />
         <activity android:name=".ShowStory" />
 
